@@ -11,8 +11,6 @@ const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 connectDB();
-// start Agenda scheduler
-require("./src/config/agenda");
 
 // Middlewares
 app.use(express.json({ limit: "5mb" }));
